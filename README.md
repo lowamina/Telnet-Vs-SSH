@@ -66,7 +66,7 @@ PC0 ── Switch ── Router (R1)
 ```
 
 <!-- SCREENSHOT 1: your Packet Tracer topology -->
-![Packet Tracer topology](images/01-topology.png)
+![Packet Tracer topology](images/topology.png)
 
 ### Telnet configuration on R1
 
@@ -85,7 +85,7 @@ line vty 0 4
 ```
 
 <!-- SCREENSHOT 2: the Telnet config on R1 (CLI) -->
-![R1 Telnet configuration](images/02-telnet-config.png)
+![R1 Telnet configuration](images/telnet-config.png)
 
 ### Telnet login from PC0
 
@@ -94,7 +94,7 @@ telnet 192.168.1.1
 ```
 
 <!-- SCREENSHOT 3: successful Telnet login from PC0 -->
-![Telnet login from PC0](images/03-telnet-login.png)
+![Telnet login from PC0](images/telnet-login.png)
 
 ### SSH configuration on R1
 

@@ -109,7 +109,7 @@ line vty 0 4
 ```
 
 <!-- SCREENSHOT 4: the SSH config on R1 (CLI) -->
-![R1 SSH configuration](images/04-ssh-config.png)
+![R1 SSH configuration](images/ssh-config.png)
 
 ### SSH login from PC0
 
@@ -118,7 +118,7 @@ ssh -l admin 192.168.1.1
 ```
 
 <!-- SCREENSHOT 5: successful SSH login from PC0 -->
-![SSH login from PC0](images/05-ssh-login.png)
+![SSH login from PC0](images/ssh-login.png)
 
 > **Note on Packet Tracer:** its PDU viewer confirms Telnet runs on **port 23
 > unencrypted** and SSH on **port 22 encrypted**, but it does not clearly display
@@ -144,14 +144,14 @@ sudo passwd testuser          # set a throwaway password, e.g. test123
 3. Applied the display filter: `telnet`
 
 <!-- SCREENSHOT 6: Wireshark showing captured Telnet packets (filter: telnet) -->
-![Captured Telnet packets](images/06-telnet-packets.png)
+![Captured Telnet packets](images/telnet-packets.png)
 
 4. Right-clicked a packet → **Follow → TCP Stream**.
 
 **Result — the username and password are visible in plain text:** ⭐
 
 <!-- SCREENSHOT 7: Follow TCP Stream showing the plaintext password -->
-![Telnet plaintext password revealed](images/07-telnet-plaintext.png)
+![Telnet plaintext password revealed](images/telnet-plaintext.png)
 
 This is the vulnerability: anyone capturing this traffic reads the credentials
 directly.

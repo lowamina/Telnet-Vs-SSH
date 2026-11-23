@@ -162,14 +162,14 @@ directly.
 2. Applied the display filter: `ssh`
 
 <!-- SCREENSHOT 8: Wireshark showing captured SSH packets (filter: ssh) -->
-![Captured SSH packets](images/08-ssh-packets.png)
+![Captured SSH packets](images/ssh-packets.png)
 
 3. Right-clicked a packet → **Follow → TCP Stream**.
 
 **Result — the session is encrypted and unreadable:** ⭐
 
 <!-- SCREENSHOT 9: Follow TCP Stream showing encrypted SSH gibberish -->
-![SSH encrypted stream](images/09-ssh-encrypted.png)
+![SSH encrypted stream](images/ssh-encrypted.png)
 
 ### 4.3 Bonus — HTTPS/TLS is encrypted too
 
@@ -177,7 +177,7 @@ Modern web traffic (HTTPS) uses TLS, which encrypts exactly like SSH. A capture
 of normal browsing shows only unreadable "Application Data":
 
 <!-- SCREENSHOT 10 (optional): TLS/HTTPS traffic showing encrypted Application Data -->
-![TLS encrypted traffic](images/10-tls-encrypted.png)
+![TLS encrypted traffic](images/tls-encrypted.png)
 
 ---
 
